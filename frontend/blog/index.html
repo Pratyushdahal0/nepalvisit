@@ -6,13 +6,12 @@
   <title>All Trek Guides — Nepal Trail Guide</title>
   <meta name="description" content="Browse all Nepal trekking guides. Everest Base Camp, Annapurna Circuit, permits, costs, packing lists and more. Free, updated 2026.">
   <meta name="robots" content="index, follow">
-  <link rel="canonical" href="https://nepaltrailguide.com/blog/">
+  <link rel="canonical" href="https://nepaltrailguide.netlify.app/blog/">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Fraunces:ital,wght@0,700;0,900;1,700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <link rel="stylesheet" href="../css/main.css">
   <style>
-    /* ── Blog-specific styles ── */
     .blog-hero {
       background: var(--black);
       padding: 130px 0 56px;
@@ -36,7 +35,6 @@
       color: rgba(255,255,255,0.45);
       font-weight: 400;
     }
-
     .filter-bar {
       position: sticky;
       top: 70px;
@@ -81,15 +79,8 @@
       border-color: var(--black);
       color: var(--white);
     }
-    .filter-btn.active.green {
-      background: var(--green);
-      border-color: var(--green);
-    }
     .filter-btn i { font-size: 11px; }
-
-    .blog-main {
-      padding: 60px 0 96px;
-    }
+    .blog-main { padding: 60px 0 96px; }
     .blog-main .container {
       max-width: var(--max-w);
       margin: 0 auto;
@@ -100,7 +91,6 @@
       grid-template-columns: repeat(3, 1fr);
       gap: 28px;
     }
-
     .blog-card {
       background: var(--white);
       border: 1px solid var(--gray-100);
@@ -126,7 +116,6 @@
       transition: transform 0.45s ease;
     }
     .blog-card:hover .blog-card-img img { transform: scale(1.05); }
-
     .blog-card-body {
       padding: 22px 22px 24px;
       display: flex;
@@ -200,7 +189,6 @@
     }
     .blog-read:hover { gap: 10px; }
     .blog-read i { font-size: 11px; }
-
     .load-more {
       text-align: center;
       margin-top: 56px;
@@ -225,7 +213,6 @@
       transform: translateY(-2px);
       box-shadow: var(--shadow-green);
     }
-
     @media (max-width: 900px) {
       .blog-grid { grid-template-columns: 1fr 1fr; }
     }
@@ -259,7 +246,7 @@
     <div class="blog-hero-inner">
       <p class="section-label" style="color:var(--green-mid)"><i class="fa-solid fa-book-open"></i> Article Library</p>
       <h1>All Trek Guides</h1>
-      <p>50+ free guides for trekking in Nepal — updated for 2026</p>
+      <p>Free guides for trekking in Nepal — updated for 2026</p>
     </div>
   </div>
 
@@ -296,7 +283,8 @@
     <div class="container">
       <div class="blog-grid" id="blogGrid">
 
-        <div class="blog-card reveal" data-cat="everest">
+        <!-- ✅ EBC -->
+        <div class="blog-card" data-cat="everest">
           <a href="../articles/ebc-guide.html" class="blog-card-img">
             <img src="https://media.nepaleverestbasecamp.com/uploads/fullbanner/ebc-trek-14-days-thumbnail.webp" alt="Everest Base Camp trek Khumbu Nepal" loading="lazy">
           </a>
@@ -318,16 +306,17 @@
           </div>
         </div>
 
-        <div class="blog-card reveal" data-cat="annapurna">
-          <a href="#" class="blog-card-img">
-            <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/27/93/ff/0a/caption.jpg?w=900&h=500&s=1" alt="Annapurna Circuit trek Nepal" loading="lazy">
+        <!-- ✅ Annapurna -->
+        <div class="blog-card" data-cat="annapurna">
+          <a href="../articles/annapurna-guide.html" class="blog-card-img">
+            <img src="https://images.unsplash.com/photo-1571401835393-8c5f35328320?w=700&q=80&auto=format&fm=webp" alt="Annapurna Circuit trek Nepal" loading="lazy">
           </a>
           <div class="blog-card-body">
             <div class="blog-card-meta">
               <span class="blog-cat"><i class="fa-solid fa-leaf"></i> Annapurna</span>
               <span class="blog-date">Apr 2026</span>
             </div>
-            <h3><a href="#">Annapurna Circuit Complete Guide 2026</a></h3>
+            <h3><a href="../articles/annapurna-guide.html">Annapurna Circuit Complete Guide 2026</a></h3>
             <p>The world-famous circuit through Nepal's most diverse landscapes. Full permits and itinerary.</p>
             <div class="blog-card-footer">
               <div class="mini-tags">
@@ -335,21 +324,22 @@
                 <span class="mini-tag">Hard</span>
                 <span class="mini-tag">5,416m</span>
               </div>
-              <a href="#" class="blog-read">Read <i class="fa-solid fa-arrow-right"></i></a>
+              <a href="../articles/annapurna-guide.html" class="blog-read">Read <i class="fa-solid fa-arrow-right"></i></a>
             </div>
           </div>
         </div>
 
-        <div class="blog-card reveal" data-cat="beginner annapurna">
-          <a href="#" class="blog-card-img">
-            <img src="https://media-cdn.tripadvisor.com/media/attractions-splice-spp-674x446/12/27/13/b6.jpg" alt="Poon Hill sunrise Nepal trek" loading="lazy">
+        <!-- ✅ Poon Hill -->
+        <div class="blog-card" data-cat="beginner annapurna">
+          <a href="../articles/poonhill-guide.html" class="blog-card-img">
+            <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=700&q=80&auto=format&fm=webp" alt="Poon Hill sunrise Nepal trek" loading="lazy">
           </a>
           <div class="blog-card-body">
             <div class="blog-card-meta">
               <span class="blog-cat"><i class="fa-solid fa-seedling"></i> Beginner</span>
               <span class="blog-date">Apr 2026</span>
             </div>
-            <h3><a href="#">Ghorepani Poon Hill — Best Short Trek</a></h3>
+            <h3><a href="../articles/poonhill-guide.html">Ghorepani Poon Hill — Best Short Trek</a></h3>
             <p>Nepal's most popular short trek. Sunrise over Dhaulagiri, rhododendron forests, Gurung culture.</p>
             <div class="blog-card-footer">
               <div class="mini-tags">
@@ -357,21 +347,22 @@
                 <span class="mini-tag">Moderate</span>
                 <span class="mini-tag">3,210m</span>
               </div>
-              <a href="#" class="blog-read">Read <i class="fa-solid fa-arrow-right"></i></a>
+              <a href="../articles/poonhill-guide.html" class="blog-read">Read <i class="fa-solid fa-arrow-right"></i></a>
             </div>
           </div>
         </div>
 
-        <div class="blog-card reveal" data-cat="langtang">
-          <a href="#" class="blog-card-img">
-            <img src="https://api.hikingbees.com/media/best-langtang-viewpoints.jpg" alt="Langtang Valley Nepal trekking" loading="lazy">
+        <!-- ✅ Langtang -->
+        <div class="blog-card" data-cat="langtang">
+          <a href="../articles/langtang-guide.html" class="blog-card-img">
+            <img src="https://www.desireadventures.com/images/product/Langtang_Valley.jpg" alt="Langtang Valley Nepal trekking" loading="lazy">
           </a>
           <div class="blog-card-body">
             <div class="blog-card-meta">
               <span class="blog-cat"><i class="fa-solid fa-tree"></i> Langtang</span>
               <span class="blog-date">Mar 2026</span>
             </div>
-            <h3><a href="#">Langtang Valley Trek — Complete Guide</a></h3>
+            <h3><a href="../articles/langtang-guide.html">Langtang Valley Trek — Complete Guide</a></h3>
             <p>Closest major trek to Kathmandu. Glaciers, yak pastures and raw beauty without the crowds.</p>
             <div class="blog-card-footer">
               <div class="mini-tags">
@@ -379,61 +370,108 @@
                 <span class="mini-tag">Moderate</span>
                 <span class="mini-tag">3,870m</span>
               </div>
-              <a href="#" class="blog-read">Read <i class="fa-solid fa-arrow-right"></i></a>
+              <a href="../articles/langtang-guide.html" class="blog-read">Read <i class="fa-solid fa-arrow-right"></i></a>
             </div>
           </div>
         </div>
 
-        <div class="blog-card reveal" data-cat="permits">
-          <a href="#" class="blog-card-img">
-            <img src="https://www.thehimalayantrips.com/templates/yootheme/cache/b1/top_winter_treks_in_nepal-b1f1448a.jpeg" alt="Nepal trekking permits TIMS card" loading="lazy">
-          </a>
-          <div class="blog-card-body">
-            <div class="blog-card-meta">
-              <span class="blog-cat"><i class="fa-solid fa-file-lines"></i> Permits</span>
-              <span class="blog-date">Mar 2026</span>
-            </div>
-            <h3><a href="#">Nepal Trekking Permits 2026 — Everything You Need</a></h3>
-            <p>TIMS card, national park permits, restricted area permits. Updated costs and where to get them.</p>
-            <div class="blog-card-footer">
-              <div class="mini-tags">
-                <span class="mini-tag">All regions</span>
-                <span class="mini-tag">Essential</span>
-              </div>
-              <a href="#" class="blog-read">Read <i class="fa-solid fa-arrow-right"></i></a>
-            </div>
-          </div>
-        </div>
-
-        <div class="blog-card reveal" data-cat="budget">
-          <a href="#" class="blog-card-img">
-            <img src="https://images.unsplash.com/photo-1551632811-561732d1e306?w=700&q=80&auto=format&fm=webp" alt="Nepal trekking budget cost" loading="lazy">
+        <!-- ✅ Trekking Cost -->
+        <div class="blog-card" data-cat="budget">
+          <a href="../articles/nepal-trekkingcost.html" class="blog-card-img">
+            <img src="https://images.unsplash.com/photo-1544735716-392fe2489ffa?w=600&q=80&auto=format&fm=webp" alt="Nepal trekking budget cost" loading="lazy">
           </a>
           <div class="blog-card-body">
             <div class="blog-card-meta">
               <span class="blog-cat"><i class="fa-solid fa-wallet"></i> Budget</span>
-              <span class="blog-date">Feb 2026</span>
+              <span class="blog-date">Mar 2026</span>
             </div>
-            <h3><a href="#">How Much Does Nepal Trekking Cost in 2026?</a></h3>
+            <h3><a href="../articles/nepal-trekkingcost.html">How Much Does Nepal Trekking Cost in 2026?</a></h3>
             <p>Honest, itemized breakdown — permits, teahouses, food, guides, porter, gear and flights.</p>
             <div class="blog-card-footer">
               <div class="mini-tags">
                 <span class="mini-tag">Budget guide</span>
                 <span class="mini-tag">All levels</span>
               </div>
-              <a href="#" class="blog-read">Read <i class="fa-solid fa-arrow-right"></i></a>
+              <a href="../articles/nepal-trekkingcost.html" class="blog-read">Read <i class="fa-solid fa-arrow-right"></i></a>
             </div>
           </div>
         </div>
 
-        <div class="blog-card reveal" data-cat="packing">
+        <!-- ✅ Best Time -->
+        <div class="blog-card" data-cat="budget">
+          <a href="../articles/best-timetotrek.html" class="blog-card-img">
+            <img src="https://images.unsplash.com/photo-1470770903676-69b98201ea1c?w=700&q=80&auto=format&fm=webp" alt="Best time to trek Nepal seasons" loading="lazy">
+          </a>
+          <div class="blog-card-body">
+            <div class="blog-card-meta">
+              <span class="blog-cat"><i class="fa-solid fa-sun"></i> Planning</span>
+              <span class="blog-date">Mar 2026</span>
+            </div>
+            <h3><a href="../articles/best-timetotrek.html">Best Time to Trek in Nepal 2026</a></h3>
+            <p>Month-by-month breakdown of weather, crowds and trail conditions across all major routes.</p>
+            <div class="blog-card-footer">
+              <div class="mini-tags">
+                <span class="mini-tag">All treks</span>
+                <span class="mini-tag">Planning</span>
+              </div>
+              <a href="../articles/best-timetotrek.html" class="blog-read">Read <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- ✅ Visa Guide -->
+        <div class="blog-card" data-cat="permits">
+          <a href="../articles/nepal-visa-guide-2026.html" class="blog-card-img">
+            <img src="https://images.unsplash.com/photo-1551632811-561732d1e306?w=700&q=80&auto=format&fm=webp" alt="Nepal visa guide 2026" loading="lazy">
+          </a>
+          <div class="blog-card-body">
+            <div class="blog-card-meta">
+              <span class="blog-cat"><i class="fa-solid fa-passport"></i> Visa</span>
+              <span class="blog-date">May 2026</span>
+            </div>
+            <h3><a href="../articles/nepal-visa-guide-2026.html">Nepal Visa Guide 2026 — Fees, eVisa & Requirements</a></h3>
+            <p>Visa on arrival fees, eVisa process, required documents and which countries need advance visas.</p>
+            <div class="blog-card-footer">
+              <div class="mini-tags">
+                <span class="mini-tag">All nationalities</span>
+                <span class="mini-tag">Essential</span>
+              </div>
+              <a href="../articles/nepal-visa-guide-2026.html" class="blog-read">Read <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- ✅ Altitude Sickness -->
+        <div class="blog-card" data-cat="everest annapurna langtang">
+          <a href="../articles/altitude-sickness-guide.html" class="blog-card-img">
+            <img src="https://images.unsplash.com/photo-1470770903676-69b98201ea1c?w=700&q=80&auto=format&fm=webp" alt="Altitude sickness Nepal trekking AMS" loading="lazy">
+          </a>
+          <div class="blog-card-body">
+            <div class="blog-card-meta">
+              <span class="blog-cat"><i class="fa-solid fa-heart-pulse"></i> Health</span>
+              <span class="blog-date">May 2026</span>
+            </div>
+            <h3><a href="../articles/altitude-sickness-guide.html">Altitude Sickness Complete Guide 2026 — AMS, HACE, HAPE</a></h3>
+            <p>Symptoms, Diamox, acclimatization schedules and the one rule that saves lives. Must read before EBC.</p>
+            <div class="blog-card-footer">
+              <div class="mini-tags">
+                <span class="mini-tag">All high treks</span>
+                <span class="mini-tag">Safety</span>
+              </div>
+              <a href="../articles/altitude-sickness-guide.html" class="blog-read">Read <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 🔜 Coming Soon — Packing List (placeholder, no link) -->
+        <div class="blog-card" data-cat="packing">
           <a href="#" class="blog-card-img">
-            <img src="https://himalayandreamtreks.in/wp-content/uploads/2024/05/Packing-List-.webp" alt="Trekking gear packing list Nepal" loading="lazy">
+            <img src="https://images.unsplash.com/photo-1533130061792-64b345e4a833?w=700&q=80&auto=format&fm=webp" alt="Nepal trekking packing list gear" loading="lazy">
           </a>
           <div class="blog-card-body">
             <div class="blog-card-meta">
               <span class="blog-cat"><i class="fa-solid fa-bag-shopping"></i> Packing</span>
-              <span class="blog-date">Feb 2026</span>
+              <span class="blog-date">Coming soon</span>
             </div>
             <h3><a href="#">Ultimate Nepal Trek Packing List 2026</a></h3>
             <p>The exact gear list used by experienced trekkers, organized by category and season.</p>
@@ -442,49 +480,7 @@
                 <span class="mini-tag">All treks</span>
                 <span class="mini-tag">Gear</span>
               </div>
-              <a href="#" class="blog-read">Read <i class="fa-solid fa-arrow-right"></i></a>
-            </div>
-          </div>
-        </div>
-
-        <div class="blog-card reveal" data-cat="everest beginner">
-          <a href="#" class="blog-card-img">
-            <img src="https://media-cdn.tripadvisor.com/media/attractions-splice-spp-674x446/07/35/dd/0e.jpg" alt="Himalaya peaks Nepal trekking difficulty" loading="lazy">
-          </a>
-          <div class="blog-card-body">
-            <div class="blog-card-meta">
-              <span class="blog-cat"><i class="fa-solid fa-dumbbell"></i> Training</span>
-              <span class="blog-date">Jan 2026</span>
-            </div>
-            <h3><a href="#">Is EBC Hard? Honest Difficulty Rating for Every Fitness Level</a></h3>
-            <p>What EBC actually demands from your body and how to prepare for it in 3 months.</p>
-            <div class="blog-card-footer">
-              <div class="mini-tags">
-                <span class="mini-tag">EBC</span>
-                <span class="mini-tag">Fitness</span>
-              </div>
-              <a href="#" class="blog-read">Read <i class="fa-solid fa-arrow-right"></i></a>
-            </div>
-          </div>
-        </div>
-
-        <div class="blog-card reveal" data-cat="permits budget">
-          <a href="#" class="blog-card-img">
-            <img src="https://images.unsplash.com/photo-1533130061792-64b345e4a833?w=700&q=80&auto=format&fm=webp" alt="Prayer flags Nepal mountains trekking" loading="lazy">
-          </a>
-          <div class="blog-card-body">
-            <div class="blog-card-meta">
-              <span class="blog-cat"><i class="fa-solid fa-file-lines"></i> Permits</span>
-              <span class="blog-date">Jan 2026</span>
-            </div>
-            <h3><a href="#">TIMS Card 2026 — Cost, Where to Get It & Do You Need One?</a></h3>
-            <p>The TIMS system changed. Here's what's current and whether you actually need a card for your trek.</p>
-            <div class="blog-card-footer">
-              <div class="mini-tags">
-                <span class="mini-tag">TIMS</span>
-                <span class="mini-tag">Essential</span>
-              </div>
-              <a href="#" class="blog-read">Read <i class="fa-solid fa-arrow-right"></i></a>
+              <a href="#" class="blog-read">Coming soon <i class="fa-solid fa-clock"></i></a>
             </div>
           </div>
         </div>
@@ -506,27 +502,27 @@
           <div class="footer-logo"><i class="fa-solid fa-mountain-sun"></i> Nepal Trail Guide</div>
           <p>Free, honest trekking guides for Nepal. Written by trekkers who've been there.</p>
           <div class="footer-social">
-            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-            <a href="#"><i class="fa-brands fa-instagram"></i></a>
-            <a href="#"><i class="fa-brands fa-youtube"></i></a>
+            <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
           </div>
         </div>
         <div class="footer-col">
           <h5><i class="fa-solid fa-route"></i> Trek Guides</h5>
           <ul>
-            <li><a href="#"><i class="fa-solid fa-chevron-right"></i> Everest Base Camp</a></li>
-            <li><a href="#"><i class="fa-solid fa-chevron-right"></i> Annapurna Circuit</a></li>
-            <li><a href="#"><i class="fa-solid fa-chevron-right"></i> Langtang Valley</a></li>
-            <li><a href="#"><i class="fa-solid fa-chevron-right"></i> Poon Hill</a></li>
+            <li><a href="../articles/ebc-guide.html"><i class="fa-solid fa-chevron-right"></i> Everest Base Camp</a></li>
+            <li><a href="../articles/annapurna-guide.html"><i class="fa-solid fa-chevron-right"></i> Annapurna Circuit</a></li>
+            <li><a href="../articles/langtang-guide.html"><i class="fa-solid fa-chevron-right"></i> Langtang Valley</a></li>
+            <li><a href="../articles/poonhill-guide.html"><i class="fa-solid fa-chevron-right"></i> Poon Hill</a></li>
           </ul>
         </div>
         <div class="footer-col">
           <h5><i class="fa-solid fa-circle-info"></i> Info</h5>
           <ul>
-            <li><a href="#"><i class="fa-solid fa-chevron-right"></i> Permits 2026</a></li>
-            <li><a href="#"><i class="fa-solid fa-chevron-right"></i> Cost Guide</a></li>
-            <li><a href="#"><i class="fa-solid fa-chevron-right"></i> Best Season</a></li>
-            <li><a href="#"><i class="fa-solid fa-chevron-right"></i> Packing Lists</a></li>
+            <li><a href="../articles/nepal-visa-guide-2026.html"><i class="fa-solid fa-chevron-right"></i> Visa Guide 2026</a></li>
+            <li><a href="../articles/altitude-sickness-guide.html"><i class="fa-solid fa-chevron-right"></i> Altitude Sickness</a></li>
+            <li><a href="../articles/nepal-trekkingcost.html"><i class="fa-solid fa-chevron-right"></i> Cost Guide</a></li>
+            <li><a href="../articles/best-timetotrek.html"><i class="fa-solid fa-chevron-right"></i> Best Season</a></li>
           </ul>
         </div>
         <div class="footer-col">
@@ -547,7 +543,6 @@
 
   <script src="../js/main.js"></script>
   <script>
-    // Load more button
     function loadMore() {
       const btn = document.getElementById('loadMoreBtn');
       btn.innerHTML = '<i class="fa-solid fa-spinner fa-spin"></i> Loading...';
@@ -558,11 +553,9 @@
       }, 1500);
     }
 
-    // Category filter
     function filterCards(cat, btn) {
       document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
       btn.classList.add('active');
-
       document.querySelectorAll('.blog-card').forEach(card => {
         const cats = card.dataset.cat || '';
         if (cat === 'all' || cats.includes(cat)) {
@@ -575,10 +568,7 @@
       });
     }
 
-    // Blog page — navbar always dark
     document.getElementById('navbar').classList.add('scrolled');
-
-    // Fix: force reveal all cards immediately on blog page
     document.querySelectorAll('.blog-card').forEach(card => {
       card.style.opacity = '1';
       card.style.transform = 'none';
